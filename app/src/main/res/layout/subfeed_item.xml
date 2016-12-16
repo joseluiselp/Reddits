@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/card_back"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/subfeed_layout_item"
+        android:weightSum="5"
+        >
+
+    <TextView
+        android:id="@+id/subfeed_score"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:drawableBottom="@drawable/down"
+        android:drawableTop="@drawable/top"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.75"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/subfeed_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/bright_foreground_material_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/subfeed_details"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@color/bright_foreground_material_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/subfeed_comments"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/material_grey_600"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subfeed_rank"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:gravity="top|end"
+        android:singleLine="true"
+        android:textColor="@color/material_grey_600"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
